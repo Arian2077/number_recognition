@@ -250,14 +250,14 @@ class Draw():
             #print(x1)
             y1= y + self.background2.winfo_height()
             #print(y1)
-            ImageGrab.grab().crop((x+1600 , y+200, x1+2000, y1+900)).save("test2.png")
+            ImageGrab.grab().crop((x+1600 , y+200, x1+2000, y1+900)).save("f:/test2.png")
         
         except:
             print("Error in saving the screenshot")
             
             
             ######################################### predict ##############################
-        my_digit=cv2.imread("test2.png",cv2.IMREAD_GRAYSCALE)
+        my_digit=cv2.imread("f:/test2.png",cv2.IMREAD_GRAYSCALE)
         my_digit = cv2.resize(my_digit, (20, 20)) 
             ####################
         my_test_flat=[]
